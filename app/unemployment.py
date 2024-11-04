@@ -1,3 +1,16 @@
+# this is the app/unemployment.py file...
+
+# LOCAL DEV (ENV VARS)
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv() # looks in the ".env" file for env vars
+
+API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
+print(API_KEY)
+
+
 # LOCAL DEV (ENV VARS)
 
 import os
